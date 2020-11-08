@@ -1,11 +1,24 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .header--dark {
     background-color:rgb(51,57,64);
     color: rgb(236,236,236);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
   }
   
 .header__title {
     display: inline;
     font-size: 1.25rem;
+    background-color:rgb(51,57,64);
+    color: rgb(236,236,236);
+    border-radius: 0.25rem;
+    padding-right: 3rem;
   }
   
 .header__search {
@@ -14,13 +27,21 @@
   }
 
 .search__input {
-    border-radius: 4px;
+    float: left;
+    display: inline-flex;
+    position: relative;
+    top: 50%;
+    bottom: 50%;
+    border-radius: 4px 0 4px 0;
     padding-right: 0.75rem;
     padding-left: 0.75rem;
     padding-top: 0.375rem;
     padding-bottom: 0.375rem;
     font-size: 1.2rem;
-    transition: border-color .15s;
+    outline: 0.15rem solid;
+    transition: border 0.5s ease-out;
+    border: 2px solid rgba(0,0,0,0.15s);
+    margin: 0.2rem auto;
   }
 
 .search__input:focus {
@@ -28,18 +49,28 @@
   }
 
 .search__btn {
-      background-color: rgb(0,123,255);
+    border-radius: 4px;
+    display: inline-flex;
+    size: 2rem;
+    background-color: rgb(0,123,255);
+    padding: 0;
+    margin: 0;
   }
+
 .main__nav {
     background-color: rgb(33, 37, 41);
     color: white;
+    display: inline-flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
 }
 
 .nav__ul {
     color: white;
-}
-.main__breadcrumb {
-    background-color: rgb(233,236,239);
+    list-style-type: none;
     border-radius: 0.25rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -47,26 +78,124 @@
     padding-left: 1.5rem;
 }
 
+.nav__li1 {
+  color: grey;
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.nav__li2 {
+  color: grey;
+  font-size: 1.5em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.nav__li3 {
+  color:white;
+  font-size: 1.5em;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.main__breadcrumb {
+    background-color: rgb(233,236,239);
+    border-radius: 0.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
 .main__card--blue {
+    flex-direction: column;
     background-color: rgb(0,123,255);
     color: white;
     border-radius: 0.25rem;
+    border-top: rgba(0,0,0,0.5);
+    display: inline-flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
+
 .main__card--yellow {
+    flex-direction: column;
     background-color: rgb(255,193,7);
     color: white;
     border-radius: 0.25rem;
-
+    border-top: rgba(0,0,0,0.5);
+    display: inline-flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: 1rem;
 }
+
 .main__card--green {
+    flex-direction: column;
+    border-top: rgba(0,0,0,0.5);
     background-color: rgb(40,167,69);
     color: white;
     border-radius: 0.25rem;
-
+    display: inline-flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: 1rem;
 }
+
 .main__card--red {
+    flex-direction: column;
+    border-top: rgba(0,0,0,0.5);
     background-color: rgb(220,53,69);
     color: white;
     border-radius: 0.25rem;
+    display: inline-flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    margin-right: 1rem;
+}
 
+.grey {
+  color: grey;
+}
+
+.card__top {
+  display: block;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-right: 1rem;
+
+}
+
+.card__bottom {
+  padding-top: 1rem;
+  border-top: 2px solid grey;
+}
+
+.card__bottom--arrow {
+  position: relative;
+  left: 30px;
+}
+
+#title {
+  padding-left: 1.5rem;
 }

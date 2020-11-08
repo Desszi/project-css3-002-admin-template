@@ -15,58 +15,62 @@
         <h3 class="header__title">
             Admin Page
         </h3>
+        <i class="fa fa-bars grey"></i>
         <div class="header__search">
             <input class="search__input" type="text" placeholder="Search for...">
-            <button class="search__btn"><i class="fa fa-search"></i></button>
+            <button class="search__btn" style="font-size: 2rem;"><i class="fa fa-search"
+                    style="font-size: 1em;"></i></button>
+            <i class="fa fa-user grey" style="font-size: 1.5rem"></i>
         </div>
     </header>
-    <main>
+    <main class="container">
         <aside>
             <nav class="main__nav">
                 <ul class="nav__ul">
-                    <li>
+                    <li class="nav__li1">
                         <header>
-                            Core
+                            CORE
                         </header>
                     </li>
-                    <li>
+                    <li class="nav__li3">
                         <header>
-                            <i class="fa-tachometer"></i>
-                            Dashboard
-                        </header>
-
-                    </li>
-                    <li>
-                        <header>
-                            Interface
+                            <i class="fa fa-tachometer"></i>
+                            <strong>Dashboard</strong>
                         </header>
                     </li>
-                    <li>
+                    <li class="nav__li1">
                         <header>
-                            <i class="fa-windows"></i>
-                            Layouts
+                            INTERFACE
                         </header>
                     </li>
-                    <li>
+                    <li class="nav__li2">
                         <header>
-                            <i class="fa-bookmark"></i>
-                            Pages
+                            <i class="fa fa-windows grey"></i>
+                            Layouts 
+                            <i class="fa fa-angle-right grey"></i>
                         </header>
                     </li>
-                    <li>
+                    <li class="nav__li2">
                         <header>
-                            Addons
+                            <i class="fa fa-bookmark grey"></i>
+                            Pages 
+                            <i class="fa fa-angle-right grey"></i>
                         </header>
                     </li>
-                    <li>
+                    <li class="nav__li1">
                         <header>
-                            <i class="fa-area-chart"></i>
+                            ADDONS
+                        </header>
+                    </li>
+                    <li class="nav__li2">
+                        <header>
+                            <i class="fa fa-area-chart grey"></i>
                             Charts
                         </header>
                     </li>
-                    <li>
+                    <li class="nav__li2">
                         <header>
-                            <i class="fa-table"></i>
+                            <i class="fa fa-table grey"></i>
                             Tables
                         </header>
                     </li>
@@ -74,55 +78,56 @@
             </nav>
         </aside>
         <section class="content">
-            <h1>Dashboard</h1>
+            <h1 id="title">Dashboard</h1>
             <div class="main__breadcrumb">
                 Dashboard
             </div>
             <div class="main__cards">
-
-                <div class="main_card main__card--blue">
-                    <div class="card_top">Primary Card</div>
-                    <div class="card_bottom">
-                        <details>
-                            <summary>
-                                View Details
-                            </summary>
-                        </details>
+                <div class="main__card main__card--blue">
+                    <div class="card__top">Primary Card</div>
+                    <div class="card__bottom">
+                        <div>
+                            View Details
+                            <span class="card__bottom--arrow">
+                                <strong>></strong>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="main_card main__card--yellow">
-                    <div class="card_top">Warning Card</div>
-                    <div class="card_bottom">
-                        <details>
-                            <summary>
-                                View Details
-                            </summary>
-                        </details>
+                <div class="main__card main__card--yellow">
+                    <div class="card__top">Warning Card</div>
+                    <div class="card__bottom">
+                        <div>
+                            View Details
+                            <span class="card__bottom--arrow">
+                                <strong>></strong>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="main_card main__card--green">
-                    <div class="card_top">Success Card</div>
-                    <div class="card_bottom">
-                        <details>
-                            <summary>
-                                View Details
-                            </summary>
-                        </details>
+                <div class="main__card main__card--green">
+                    <div class="card__top">Success Card</div>
+                    <div class="card__bottom">
+                        <div>
+                            View Details
+                            <span class="card__bottom--arrow">
+                                <strong>></strong>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="main_card main__card--red">
-                    <div class="card_top">Danger Card</div>
-                    <div class="card_bottom">
-                        <details>
-                            <summary>
-                                View Details
-                            </summary>
-                        </details>
+                <div class="main__card main__card--red">
+                    <div class="card__top">Danger Card</div>
+                    <div class="card__bottom">
+                        <div>
+                            View Details
+                            <span class="card__bottom--arrow">
+                                <strong>></strong>
+                            </span>
+                        </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
     </main>
 </body>
